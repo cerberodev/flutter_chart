@@ -9,7 +9,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Charts in Flutter - WiraTeam.Dev',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Charts in Flutter - WiraTeam.Dev'),
@@ -27,20 +26,16 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
-  
-   return Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
       body: Center(
         child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-
-            
             Text(
               'You have pushed the button this many times:',
             ),
@@ -51,11 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-     //floatingActionButton: FloatingActionButton(
-     //  onPressed: null,
-     //  tooltip: 'Increment',
-     //  child: Icon(Icons.add),
-     //), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        tooltip: 'Increment',
+        child: Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
